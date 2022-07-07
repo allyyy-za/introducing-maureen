@@ -1,51 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/css/tailwind.css" rel="stylesheet" />
-  <title>Introducing Maureen</title>
-</head>
-<body class="bg-background flex h-screen w-screen item-center justify-center">
-  <div class="grid grid-cols-1 gap-3 p-16 max-w-screen-2xl">
-    <div>
-      <img class="h-32" src="/img/am.png" at="Allyza Maureen" />
-      <h2 class="pt-5 text-6xl leading-normal">Hello, I am <span class="text-main font-bold">Maureen</span>, and I am a <span class="italic">coffee-driven</span> web development intern at Spiralytics, Inc.</h2>
-    </div>
-    <div class="bg-gray grid grid-cols-2 mt-10 h-96">
-      <div class="col-span-1 p-5 flex justify-center items-center">
-        <img class="h-72 flex justify-start rounded-lg drop-shadow-lg shadow-dark" src="/img/maureen.jpeg" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/tailwind.css" rel="stylesheet" />
+    <title>Introducing Maureen</title>
+  </head>
+  <body class="bg-background flex h-screen w-screen item-center justify-center">
+    <!-- <img src="/img/bgwaves.png" class="absolute z-0 mt-80 ml-2 flex w-screen" /> -->
+    <div class="grid grid-cols-1 gap-3 p-16">
+      <div>
+        <img class="sm:h-24 md:h-24 lg:h-40 xl:h-40 2xl:h-40" src="/img/am.png" at="Allyza Maureen" />
+        <h2 class="pt-3 sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl 2xl:text-7xl leading-normal">Hello, I am <span class="text-main font-bold">Maureen</span></h2>
+        <h3 class="sm:text-2xl md:text-3xl lg:text-6xl xl:text-6xl 2xl:text-5xl leading-normal sm:mt-2 md:mt-3 lg:mt-5">
+          I am a <span class="italic">coffee-driven</span> <span class="text-main">web development intern</span> at
+          Spiralytics, Inc.
+        </h3>
       </div>
-      <div class="col-span-1 p-10 items-start justify-center">
-        <h2 class="font-bold text-main text-4xl">Introducing, Maureen ✨</h2>
-        <h3 class="text-2xl pt-5">Full Name: Allyza Maureen P. Catura <br>Nickname: Maureen <br>Age: 21 years old <br>Birthday: December 30, 2000 <br>Course: BS in Computer Science </h3>
-      </div>
-    </div>
-    <div class="mt-10"> 
-      <h2 class="pt-5 pl-3 font-bold text-main text-3xl">Hobbies and Interests 🏓</h2>
-      <div class="grid grid-cols-4 pt-10">
-        <div class="p-3">
-          <img class="h-48 mx-auto rounded-lg drop-shadow-lg" src="/img/minecraft.png" />
-          <p class="flex items-center justify-center pt-2">Playing Minecraft</p>
+      <div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 sm:mt-5 md:mt-10 lg:mt-32">
+        <div class="col-span-1 p-5 flex justify-center items-center">
+          <img class="sm:h-64 md:h-64 lg:h-96 flex justify-start rounded-full drop-shadow-lg shadow-dark" src="/img/maureen.jpeg" />
         </div>
-        <div class="p-3">
-          <img class="h-48 mx-auto rounded-lg drop-shadow-lg" src="/img/skz.jpg" />
-          <p class="flex items-center justify-center pt-2">Listening to K-Pop</p>
-        </div>
-        <div class="p-3">
-          <img class="h-48 mx-auto rounded-lg drop-shadow-lg" src="/img/kdrama.jpg" />
-          <p class="flex items-center justify-center pt-2">Watching K-Drama</p>
-        </div>
-        <div class="p-3">
-          <img class="h-48 mx-auto rounded-lg drop-shadow-lg" src="/img/studying.png" />
-          <p class="flex items-center justify-center pt-2">Self-Studying</p>
+        <div class="col-span-1 sm:p-3 md:pt-7 lg:p-10 items-start justify-center">
+          <h2 class="font-bold text-main text-4xl">Introducing, Maureen ✨</h2>
+          <h3 class="text-xl pt-5">
+            Full Name: Allyza Maureen P. Catura <br />Nickname: Maureen <br />Age: 21 years old <br />Birthday: December
+            30, 2000 <br />Course: BS in Computer Science <br />Favorites: Coffee (Drink), Taylor Swift (Female Singer), Chicken (Food)
+          </h3>
         </div>
       </div>
+      <div class="sm:mt-2 lg:mt-10">
+        <h2 class="sm:pt-1 lg:pt-5 pl-3 font-bold text-main text-3xl">Hobbies and Interests 🏓</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 pt-10">
+          <div class="p-3">
+            <img class="h-48 mx-auto rounded-lg drop-shadow-lg" src="/img/minecraft.png" />
+            <p class="flex items-center justify-center pt-2">Playing Minecraft</p>
+          </div>
+          <div class="p-3">
+            <img class="h-48 mx-auto rounded-lg drop-shadow-lg" src="/img/skz.jpg" />
+            <p class="flex items-center justify-center pt-2">Listening to K-Pop</p>
+          </div>
+          <div class="p-3">
+            <img class="h-48 mx-auto rounded-lg drop-shadow-lg" src="/img/kdrama.jpg" />
+            <p class="flex items-center justify-center pt-2">Watching K-Drama</p>
+          </div>
+          <div class="p-3">
+            <img class="h-48 mx-auto rounded-lg drop-shadow-lg" src="/img/studying.png" />
+            <p class="flex items-center justify-center pt-2">Self-Studying</p>
+          </div>
+        </div>
+      </div>
+      <div class="sm:mt-2 lg:mt-10">
+        <h2 class="pt-5 pl-3 font-bold text-main text-3xl">Organizations 🏫</h2>
+        <h3 class="pl-4 pt-5">
+          <span class="text-2xl text-main font-semibold">Computer Science Society</span><br />
+          <span class="text-xl">President (2021-2022)</span><br />
+          <span
+            >As the President of CSS, I'm tasked with overseeing and maintaining all the processes and involving the
+            students from Computer Science Department of Pamantasan ng Lungsod ng Maynila and have done the
+            following:</span
+          >
+        </h3>
+        <div class="pl-9 pt-2">
+          <ul class="list-disc">
+            <li>
+              Aid students with their academic-related concerns to be addressed properly by right administration of
+              Pamantasan ng Lungsod ng Maynila.
+            </li>
+            <li>
+              Spearhead a project for students of Computer Science Department of Pamantasan ng Lungsod ng Maynila
+              entitled Coding Challenge to let students showcase their programming and problem-solving skills.
+            </li>
+          </ul>
+        </div>
+        <h3 class="pl-4 pt-5">
+          <span class="text-2xl text-main font-semibold">Google Developer Student Clubs PLM</span><br />
+          <span class="text-xl">Auditor (2021-2022)</span><br />
+          <span
+            >As the auditor of GDSC-PLM, I’m tasked with preparing, examining, and assessing the financial records and
+            operations of an organisation to ensure it runs efficiently and legally and have done the following:</span
+          >
+        </h3>
+        <div class="pl-9 pt-2">
+          <ul class="list-disc">
+            <li>
+              Organize and gather evidences about the financial state of the organization to ensure that the money going
+              in and out is recorded and processed correctly.
+            </li>
+            <li>Prepare financial reports, receipts, and income and cash flow statements for the organization.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="sm:mt-2 lg:mt-10">
+        <h2 class="pt-5 pl-3 font-bold text-main text-3xl">Projects 💻</h2>
+        <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-y-10">
+          <div class="pl-4 pt-5 flex items-center">
+            <div class="pr-5">
+              <h3 class="text-2xl font-semibold">Intellipaper</h3>
+              <p>
+                Intellipaper is a web application for students and professionals to manage their research with useful tools such as workspaces, to-do list, file storage, and citation generation.<br><br>
+                <span class="font-semibold">Tech Stack:</span> MongoDB, Express.js, React.js, Node.js
+              </p>
+              <button onclick="window.open('https://intellipaper.vercel.app/','_blank');" class="bg-main hover:bg-secondary hover:translate-y-0.5 focus:ring focus:ring-offset-2 focus:ring-main focus:ring-opacity-50 active:bg-tertiary text-white mt-3 py-2 px-4 rounded-lg ">
+                View Project
+              </button>
+            </div>
+          </div>
+          <div class="drop-shadow-lg">
+            <img src="/img/intellipaper.png" class="object-cover"/>
+          </div>
+          <div class="pl-4 pt-5 flex items-center">
+            <div class="pr-5">
+              <h3 class="text-2xl font-semibold">Notipay</h3>
+              <p>
+                NotiPay is a paid subscriptions and bills manager web application that allows user to log subscription and bill services and manage payments with renewal and payment date.<br><br>
+                <span class="font-semibold">Tech Stack:</span>  Spring Boot, React,js, MySQL
+              </p>
+              <button onclick="window.open('https://github.com/allyyy-za/notipay-frontend','_blank');" class="bg-main hover:bg-secondary hover:translate-y-0.5 focus:ring focus:ring-offset-2 focus:ring-main focus:ring-opacity-50 active:bg-tertiary text-white mt-3 py-2 px-4 rounded-lg ">
+                View Repository
+              </button>
+            </div>
+          </div>
+          <div class="drop-shadow-lg">
+            <img src="/img/notipay.png" class="object-cover"/>
+          </div>
+        </div>
+        <div class="grid grid-cols-2">
+        </div>
+      </div>
     </div>
-    <div class="mt-10">
-      <h2 class="pt-5 pl-3 font-bold text-main text-3xl">Organizations 🏫</h2>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
