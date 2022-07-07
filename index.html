@@ -4,130 +4,205 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="img/am.png" type="image/x-icon">
+    <link rel="icon" href="img/am.png" type="image/x-icon" />
     <link href="css/tailwind.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Introducing Maureen</title>
   </head>
-  <body class="bg-background flex h-screen w-screen item-center justify-center">
-    <!-- <img src="/img/bgwaves.png" class="absolute z-0 mt-80 ml-2 flex w-screen" /> -->
-    <div class="grid grid-cols-1 gap-3 p-16">
-      <div>
-        <img class="h-16 sm:h-24 md:h-24 lg:h-40 xl:h-40 2xl:h-40" src="/img/am.png" at="Allyza Maureen" />
-        <h2 class="text-3xl sm:pt-3 md:pt-5 lg:pt-10 sm:text-4xl md:text-5xl lg:text-7xl first-letter:leading-normal">Hello, I am <span class="text-main font-bold">Maureen</span></h2>
-        <h3 class="text-2xl sm:text-2xl md:text-3xl lg:text-6xl leading-normal mt-1">
-          I am a <span class="italic">coffee-driven</span> <span class="text-main">web development intern</span> at
-          Spiralytics, Inc.
+  <body class="bg-background flex h-screen w-screen item-center justify-center p-16">
+
+    <!-- Header -->
+    <div class="grid grid-cols-1 gap-4 md:gap-8 lg:gap-16">
+      <div class="flex-col space-y-2 lg:space-y-5">
+        <img class="h-16 md:h-24 lg:h-40" src="/img/am.png" alt="Introducing Maureen Logo" />
+        <h2 class="text-3xl md:text-5xl lg:text-7xl">Hello, I am <span class="text-main font-bold">Maureen</span></h2>
+        <h3 class="text-2xl md:text-3xl lg:text-6xl">
+          I am a <span class="italic leading-normal">coffee-driven</span>
+          <span class="text-main">web development intern</span> at Spiralytics, Inc.
         </h3>
       </div>
-      <div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 sm:mt-5 md:mt-10 lg:mt-32">
-        <div class="col-span-1 p-5 flex justify-center items-center">
-          <img class="h-48 sm:h-64 md:h-64 lg:h-96 flex justify-start rounded-full drop-shadow-lg shadow-dark" src="img/maureen.jpeg" />
+
+      <!-- Profile Picture -->
+      <div class="grid grid-cols-1 gap-2 lg:gap-5 md:grid-cols-2 lg:grid-cols-2 justify-center items-center">
+        <div class="w-48 h-48 md:h-64 md:w-64 lg:h-96 lg:w-96 mx-auto">
+          <img
+            class="h-48 md:h-64 lg:h-96 rounded-full drop-shadow-lg shadow-dark"
+            src="img/maureen.jpeg"
+            alt="Maureen's Profile Picture"
+          />
         </div>
-        <div class="col-span-1 sm:p-3 md:pt-7 lg:p-28 items-start justify-center">
-          <h2 class="text-3xl font-bold text-main sm:text-4xl md:text-4xl lg:text-4xl">Introducing, Maureen ✨</h2>
-          <h3 class="text-xl pt-5">
+
+        <!-- Introducing Maureen -->
+        <div class="flex flex-col space-y-5">
+          <h2 class="text-3xl font-bold text-main flex justify-center md:justify-start md:text-4xl lg:text-4xl">
+            Introducing Maureen ✨
+          </h2>
+          <h3 class="text-xl">
             Full Name: Allyza Maureen P. Catura <br />Nickname: Maureen <br />Age: 21 years old <br />Birthday: December
-            30, 2000 <br />Course: BS in Computer Science <br />Favorites: Coffee (Drink), Taylor Swift (Female Singer), Chicken (Food)
+            30, 2000 <br />Course: BS in Computer Science <br />Favorites: Coffee (Drink), Taylor Swift (Female Singer),
+            Chicken (Food)
           </h3>
         </div>
       </div>
-      <div class="sm:mt-2 lg:mt-10">
-        <h2 class="pt-1 sm:pt-1 lg:pt-5 sm:pl-3 lg:pl-3 font-bold text-main text-3xl">Hobbies and Interests 🏓</h2>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 pt-10">
-          <div class="p-3">
-            <img class="h-48 mx-auto rounded-lg drop-shadow-lg" src="img/minecraft.png" />
-            <p class="flex items-center justify-center pt-2">Playing Minecraft</p>
+
+      <!-- Hobbies and Interest -->
+      <div class="flex flex-col space-y-5">
+        <h2 class="heading">Hobbies and Interests 🏓</h2>
+        <div
+          class="flex flex-col gap-3 space-y-3 md:grid md:grid-cols-2 md:gap-y-3 md:space-y-3 lg:flex-row lg:flex lg:justify-evenly lg:space-y-3"
+        >
+          <div class="flex flex-col space-y-3">
+            <img class="hobbies-img" src="img/minecraft.png" />
+            <p class="flex items-center justify-center">Playing Minecraft</p>
           </div>
-          <div class="p-3">
-            <img class="h-48 mx-auto rounded-lg drop-shadow-lg" src="img/skz.jpg" />
-            <p class="flex items-center justify-center pt-2">Listening to K-Pop</p>
+          <div>
+            <img class="hobbies-img" src="img/skz.jpg" />
+            <p class="flex items-center justify-center">Listening to K-Pop</p>
           </div>
-          <div class="p-3">
-            <img class="h-48 mx-auto rounded-lg drop-shadow-lg" src="img/kdrama.jpg" />
-            <p class="flex items-center justify-center pt-2">Watching K-Drama</p>
+          <div>
+            <img class="hobbies-img" src="img/kdrama.jpg" />
+            <p class="flex items-center justify-center">Watching K-Drama</p>
           </div>
-          <div class="p-3">
-            <img class="h-48 mx-auto rounded-lg drop-shadow-lg" src="img/studying.png" />
-            <p class="flex items-center justify-center pt-2">Self-Studying</p>
+          <div>
+            <img class="hobbies-img" src="img/studying.png" />
+            <p class="flex items-center justify-center">Self-Studying</p>
           </div>
         </div>
       </div>
-      <div class="sm:mt-2 lg:mt-10">
-        <h2 class="pt-5 pl-3 font-bold text-main text-3xl">Organizations 🏫</h2>
-        <h3 class="pl-4 pt-5">
-          <span class="text-2xl text-main font-semibold">Computer Science Society</span><br />
-          <span class="text-xl">President (2021-2022)</span><br />
-          <span
-            >As the President of CSS, I'm tasked with overseeing and maintaining all the processes and involving the
-            students from Computer Science Department of Pamantasan ng Lungsod ng Maynila and have done the
-            following:</span
-          >
-        </h3>
-        <div class="pl-9 pt-2">
-          <ul class="list-disc">
-            <li>
-              Aid students with their academic-related concerns to be addressed properly by right administration of
-              Pamantasan ng Lungsod ng Maynila.
-            </li>
-            <li>
-              Spearhead a project for students of Computer Science Department of Pamantasan ng Lungsod ng Maynila
-              entitled Coding Challenge to let students showcase their programming and problem-solving skills.
-            </li>
-          </ul>
+
+      <!-- Organizations -->
+      <div class="flex flex-col space-y-5">
+        <h2 class="heading">Organizations 🏫</h2>
+
+        <!-- Computer Science Society -->
+        <div class="flex flex-col space-y-1">
+          <h3 class="text-2xl text-main font-semibold">Computer Science Society</h3>
+          <h4 class="text-xl">President (2021-2022)</h4>
+          <p>
+            As the President of CSS, I'm tasked with overseeing and maintaining all the processes and involving the
+            students from Computer Science Department of Pamantasan ng Lungsod ng Maynila and have done the following:
+          </p>
+          <div class="pl-5">
+            <ul class="list-disc">
+              <li>
+                Aid students with their academic-related concerns to be addressed properly by right administration of
+                Pamantasan ng Lungsod ng Maynila.
+              </li>
+              <li>
+                Spearhead a project for students of Computer Science Department of Pamantasan ng Lungsod ng Maynila
+                entitled Coding Challenge to let students showcase their programming and problem-solving skills.
+              </li>
+            </ul>
+          </div>
         </div>
-        <h3 class="pl-4 pt-5">
-          <span class="text-2xl text-main font-semibold">Google Developer Student Clubs PLM</span><br />
-          <span class="text-xl">Auditor (2021-2022)</span><br />
-          <span
-            >As the auditor of GDSC-PLM, I’m tasked with preparing, examining, and assessing the financial records and
-            operations of an organisation to ensure it runs efficiently and legally and have done the following:</span
-          >
-        </h3>
-        <div class="pl-9 pt-2">
-          <ul class="list-disc">
-            <li>
-              Organize and gather evidences about the financial state of the organization to ensure that the money going
-              in and out is recorded and processed correctly.
-            </li>
-            <li>Prepare financial reports, receipts, and income and cash flow statements for the organization.</li>
-          </ul>
+
+        <!-- Google Developer Student Clubs PLM -->
+        <div class="flex flex-col space-y-1">
+          <h3 class="text-2xl text-main font-semibold">Google Developer Student Clubs PLM</h3>
+          <h4 class="text-xl">Auditor (2021-2022)</h4>
+          <p>
+            As the auditor of GDSC-PLM, I’m tasked with preparing, examining, and assessing the financial records and
+            operations of an organisation to ensure it runs efficiently and legally and have done the following:
+          </p>
+          <div class="pl-5">
+            <ul class="list-disc">
+              <li>
+                Organize and gather evidences about the financial state of the organization to ensure that the money
+                going in and out is recorded and processed correctly.
+              </li>
+              <li>Prepare financial reports, receipts, and income and cash flow statements for the organization.</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="sm:mt-2 lg:mt-10">
-        <h2 class="pt-5 pl-3 font-bold text-main text-3xl">Projects 💻</h2>
-        <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-y-10">
-          <div class="pl-4 pt-5 flex items-center">
-            <div class="pr-5">
-              <h3 class="text-2xl font-semibold">Intellipaper</h3>
-              <p>
-                Intellipaper is a web application for students and professionals to manage their research with useful tools such as workspaces, to-do list, file storage, and citation generation.<br><br>
-                <span class="font-semibold">Tech Stack:</span> MongoDB, Express.js, React.js, Node.js
-              </p>
-              <button onclick="window.open('https://intellipaper.vercel.app/','_blank');" class="bg-main hover:bg-secondary hover:translate-y-0.5 focus:ring focus:ring-offset-2 focus:ring-main focus:ring-opacity-50 active:bg-tertiary text-white mt-3 py-2 px-4 rounded-lg ">
-                View Project
-              </button>
+
+      <!-- Projects -->
+      <div class="flex flex-col space-y-5">
+        <h2 class="heading">Projects 💻</h2>
+
+        <!-- Intellipaper -->
+        <div class="flex items-center rounded-lg bg-white shadow-lg">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-5">
+            <div>
+              <div class="p-10">
+                <h3 class="text-2xl font-semibold">Intellipaper</h3>
+                <p>
+                  Intellipaper is a web application for students and professionals to manage their research with useful
+                  tools such as workspaces, to-do list, file storage, and citation generation.<br /><br />
+                  <span class="font-semibold">Tech Stack:</span> MongoDB, Express.js, React.js, Node.js
+                </p>
+                <button
+                  onclick="window.open('https://intellipaper.vercel.app/','_blank');"
+                  class="bg-main hover:bg-secondary hover:translate-y-0.5 focus:ring focus:ring-offset-2 focus:ring-main focus:ring-opacity-50 active:bg-tertiary text-white mt-3 py-2 px-4 rounded-lg"
+                >
+                  View Project
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="drop-shadow-lg">
-            <img src="img/intellipaper.png" class="object-cover"/>
-          </div>
-          <div class="pl-4 pt-5 flex items-center">
-            <div class="pr-5">
-              <h3 class="text-2xl font-semibold">Notipay</h3>
-              <p>
-                NotiPay is a paid subscriptions and bills manager web application that allows user to log subscription and bill services and manage payments with renewal and payment date.<br><br>
-                <span class="font-semibold">Tech Stack:</span>  Spring Boot, React,js, MySQL
-              </p>
-              <button onclick="window.open('https://github.com/allyyy-za/notipay-frontend','_blank');" class="bg-main hover:bg-secondary hover:translate-y-0.5 focus:ring focus:ring-offset-2 focus:ring-main focus:ring-opacity-50 active:bg-tertiary text-white mt-3 py-2 px-4 rounded-lg ">
-                View Repository
-              </button>
+            <div class="flex justify-center items-center">
+              <img src="img/intellipaper.png" class="object-cover" alt="Intellipaper" />
             </div>
-          </div>
-          <div class="drop-shadow-lg">
-            <img src="img/notipay.png" class="object-cover"/>
           </div>
         </div>
-        <div class="grid grid-cols-2">
+
+        <!-- Notipay -->
+        <div class="flex items-center rounded-lg bg-white shadow-lg">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-5">
+            <div>
+              <div class="p-10">
+                <h3 class="text-2xl font-semibold">Notipay</h3>
+                <p>
+                  NotiPay is a paid subscriptions and bills manager web application that allows user to log subscription
+                  and bill services and manage payments with renewal and payment date.<br /><br />
+                  <span class="font-semibold">Tech Stack:</span> Spring Boot, React,js, MySQL
+                </p>
+                <button
+                  onclick="window.open('https://github.com/allyyy-za/notipay-frontend','_blank');"
+                  class="bg-main hover:bg-secondary hover:translate-y-0.5 focus:ring focus:ring-offset-2 focus:ring-main focus:ring-opacity-50 active:bg-tertiary text-white mt-3 py-2 px-4 rounded-lg"
+                >
+                  View Repository
+                </button>
+              </div>
+            </div>
+            <div class="flex justify-center items-center">
+              <img src="img/notipay.png" class="object-cover" alt="Notipay" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="flex flex-col space-y-5 space-x-3 pb-10 items-center">
+        <h2 class="font-semibold text-2xl">💬 To know more about me, you can follow me at:</h2>
+        <div class="flex flex-row space-x-10">
+          <a href="https://www.facebook.com/AllyzaMaureen">
+            <svg class="w-6 h-6 text-blue-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" alt="Facebook">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+              />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/allyza-maureen-catura/">
+            <svg class="w-6 h-6 text-blue-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" alt="Linkedin">
+              <path
+                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+              ></path>
+            </svg>
+          </a>
+          <a href="https://github.com/allyyy-za">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              alt="Github"
+              class="w-6 h-6 fill-current"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
         </div>
       </div>
     </div>

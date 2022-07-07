@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.heading {
+  @apply font-bold text-main text-3xl flex justify-center md:justify-start;
+}
+
+.hobbies-img {
+  @apply h-48 mx-auto rounded-lg drop-shadow-lg;
+}
